@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Computadoras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .categories-section {
+            flex-grow: 1;
+        }
+        footer {
+            margin-top: auto;
+        }
+        .category-card img {
+            max-width: 100%; /* Make sure image doesn't exceed card width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 250px; /* Increased maximum height */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo ml-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwN1cyA6Rb9jnDgVw39j9XoiR-8_MJ-VvtQ&s" alt="Logo" class="h-10">
+        </div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="pagina.html" class="hover:text-blue-300 no-underline">Inicio</a></li>
+                <li><a href="productos.html" class="hover:text-blue-300 no-underline">Productos</a></li>
+                <li><a href="contactos.html" class="hover:text-blue-300 no-underline">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="categories-section py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">Categorías Destacadas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="category-card bg-white rounded-lg shadow-md p-4 flex flex-col justify-center items-center">
+                    <img src="https://sigmatiendas.com/cdn/shop/files/Gaming_laptop_banner.jpg?v=1681394349&width=2800" alt="Laptops" class="mb-4 rounded-md" >
+                    <h3 class="text-lg font-semibold text-gray-700">Laptops</h3>
+                </div>
+                <div class="category-card bg-white rounded-lg shadow-md p-4 flex flex-col justify-center items-center">
+                    <img src="https://portal-center.com/wp-content/uploads/2020/09/PC-GAMER.png" alt="Desktops" class="mb-4 rounded-md" >
+                    <h3 class="text-lg font-semibold text-gray-700">Desktops</h3>
+                </div>
+
+                <div class="category-card bg-white rounded-lg shadow-md p-4 flex flex-col justify-center items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq7O5KGvLjx7m3MjAsR4IT18NaP-ooIvxU9g&s" alt="Accesorios" class="mb-4 rounded-md" >
+                    <h3 class="text-lg font-semibold text-gray-700">Accesorios</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 px-4 rounded-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Tienda de Computadoras. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#" class="mr-2 hover:text-blue-300 no-underline">Facebook</a>
+                <a href="#" class="mr-2 hover:text-blue-300 no-underline">Twitter</a>
+                <a href="#" class="hover:text-blue-300 no-underline">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+    </script>
+</body>
+</html>
